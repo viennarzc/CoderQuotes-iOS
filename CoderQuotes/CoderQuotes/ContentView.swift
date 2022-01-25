@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         
         TabView {
-            CardsContentView(quotesAPI: quotesAPI)
+            CardsContentView(items: quotesAPI.items)
         }
         .onAppear {
             quotesAPI.fetchData() //fetch data when tab view appears on screen

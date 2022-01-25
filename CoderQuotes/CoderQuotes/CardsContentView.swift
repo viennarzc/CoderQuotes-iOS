@@ -10,10 +10,10 @@ import SwiftUI
 
 
 struct CardsContentView: View {
-    var quotesAPI: QuotesAPI
+    var items: [Quote]
     
     var body: some View {
-        ForEach(quotesAPI.items) { quote in
+        ForEach(items) { quote in
             VStack(alignment: .trailing) {
                 Text(quote.author)
                     .font(.caption)
@@ -30,7 +30,8 @@ struct CardsContentView: View {
 
 struct CardsContentView_Previews: PreviewProvider {
     static var previews: some View {
-        CardsContentView(quotesAPI: QuotesAPI())
+        CardsContentView(
+            items: [Quote(id: "", author: "John", en: "asldj")])
             .previewLayout(.sizeThatFits)
     }
 }

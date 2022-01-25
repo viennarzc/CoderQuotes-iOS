@@ -8,14 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var quotesAPI: QuotesAPI
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        TabView {
+            CardsContentView(quotesAPI: quotesAPI)
+        }
+        .onAppear {
+            quotesAPI.fetchData() //fetch data when tab view appears on screen
+        }
+        .frame(width: UIScreen.main.bounds.width,height: 600)
+        .tabViewStyle(PageTabViewStyle()) //make a paged effect when swiping
+              
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(QuotesAPI())
     }
 }
+

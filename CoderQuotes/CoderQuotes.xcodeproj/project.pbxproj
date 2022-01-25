@@ -11,6 +11,12 @@
 		211B7F3B27A03A9B000C0EF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211B7F3A27A03A9B000C0EF2 /* ContentView.swift */; };
 		211B7F3D27A03A9D000C0EF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211B7F3C27A03A9D000C0EF2 /* Assets.xcassets */; };
 		211B7F4027A03A9D000C0EF2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211B7F3F27A03A9D000C0EF2 /* Preview Assets.xcassets */; };
+		211B7F4727A04AF5000C0EF2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211B7F4627A04AF5000C0EF2 /* CardView.swift */; };
+		211B7F4927A04B2E000C0EF2 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211B7F4827A04B2E000C0EF2 /* APIService.swift */; };
+		211B7F4B27A04B58000C0EF2 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211B7F4A27A04B58000C0EF2 /* Quote.swift */; };
+		211B7F4D27A04FA1000C0EF2 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211B7F4C27A04FA1000C0EF2 /* CardViewModel.swift */; };
+		211B7F4F27A04FC8000C0EF2 /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211B7F4E27A04FC8000C0EF2 /* Contants.swift */; };
+		211B7F5127A052D5000C0EF2 /* CardsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211B7F5027A052D5000C0EF2 /* CardsContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		211B7F3A27A03A9B000C0EF2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		211B7F3C27A03A9D000C0EF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		211B7F3F27A03A9D000C0EF2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		211B7F4627A04AF5000C0EF2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		211B7F4827A04B2E000C0EF2 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		211B7F4A27A04B58000C0EF2 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		211B7F4C27A04FA1000C0EF2 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		211B7F4E27A04FC8000C0EF2 /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
+		211B7F5027A052D5000C0EF2 /* CardsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,13 @@
 			isa = PBXGroup;
 			children = (
 				211B7F3827A03A9B000C0EF2 /* CoderQuotesApp.swift */,
+				211B7F4E27A04FC8000C0EF2 /* Contants.swift */,
 				211B7F3A27A03A9B000C0EF2 /* ContentView.swift */,
+				211B7F5027A052D5000C0EF2 /* CardsContentView.swift */,
+				211B7F4827A04B2E000C0EF2 /* APIService.swift */,
+				211B7F4A27A04B58000C0EF2 /* Quote.swift */,
+				211B7F4627A04AF5000C0EF2 /* CardView.swift */,
+				211B7F4C27A04FA1000C0EF2 /* CardViewModel.swift */,
 				211B7F3C27A03A9D000C0EF2 /* Assets.xcassets */,
 				211B7F3E27A03A9D000C0EF2 /* Preview Content */,
 			);
@@ -138,6 +156,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				211B7F3B27A03A9B000C0EF2 /* ContentView.swift in Sources */,
+				211B7F4727A04AF5000C0EF2 /* CardView.swift in Sources */,
+				211B7F4D27A04FA1000C0EF2 /* CardViewModel.swift in Sources */,
+				211B7F4F27A04FC8000C0EF2 /* Contants.swift in Sources */,
+				211B7F5127A052D5000C0EF2 /* CardsContentView.swift in Sources */,
+				211B7F4927A04B2E000C0EF2 /* APIService.swift in Sources */,
+				211B7F4B27A04B58000C0EF2 /* Quote.swift in Sources */,
 				211B7F3927A03A9B000C0EF2 /* CoderQuotesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

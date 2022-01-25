@@ -12,14 +12,20 @@ struct ContentView: View {
     
     var body: some View {
         
-        TabView {
-            CardsContentView(items: quotesAPI.items)
+        NavigationView {
+            TabView {
+                CardsContentView(items: quotesAPI.items)
+            }
+            .onAppear {
+                quotesAPI.fetchData() //fetch data when tab view appears on screen
+            }
+            .frame(width: UIScreen.main.bounds.width,height: 600)
+            .tabViewStyle(PageTabViewStyle()) //make a paged effect when swiping
+            .navigationTitle("Coding Quotes")
         }
-        .onAppear {
-            quotesAPI.fetchData() //fetch data when tab view appears on screen
-        }
-        .frame(width: UIScreen.main.bounds.width,height: 600)
-        .tabViewStyle(PageTabViewStyle()) //make a paged effect when swiping
+        .foregroundColor(.black)
+        
+        
               
     }
 }
